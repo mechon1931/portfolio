@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo/index';
+import Loader from 'react-loaders'
+
 
 function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -43,6 +45,7 @@ function Home() {
         <Link to='/contact' className='flat-button'>Contact Me</Link>
       </div>
       <Logo />
+      <Loader type='pacman' />
     </div>
   )
 }
